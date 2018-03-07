@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13158" started-at="2018-03-02T11:40:25Z" finished-at="2018-03-02T11:40:38Z">
+  <suite name="Suite" duration-ms="19402" started-at="2018-03-07T09:21:36Z" finished-at="2018-03-07T09:21:55Z">
     <groups>
+      <group name="group2">
+        <method signature="ruf.test2()[pri:1, instance:ruf.ruf1.ruf@3bfdc050]" name="test2" class="ruf.ruf1.ruf"/>
+      </group> <!-- group2 -->
     </groups>
-    <test name="Default test" duration-ms="13158" started-at="2018-03-02T11:40:25Z" finished-at="2018-03-02T11:40:38Z">
+    <test name="Test" duration-ms="19402" started-at="2018-03-07T09:21:36Z" finished-at="2018-03-07T09:21:55Z">
       <class name="ruf.ruf1.ruf">
-        <test-method status="PASS" signature="ruf()[pri:0, instance:ruf.ruf1.ruf@224edc67]" name="ruf" duration-ms="13097" started-at="2018-03-02T11:40:25Z" finished-at="2018-03-02T11:40:38Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:ruf.ruf1.ruf@3bfdc050]" name="beforeTest" is-config="true" duration-ms="10016" started-at="2018-03-07T09:21:36Z" finished-at="2018-03-07T09:21:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ruf -->
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test2()[pri:1, instance:ruf.ruf1.ruf@3bfdc050]" name="test2" duration-ms="2108" started-at="2018-03-07T09:21:46Z" finished-at="2018-03-07T09:21:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:ruf.ruf1.ruf@3bfdc050]" name="afterTest" is-config="true" duration-ms="7200" started-at="2018-03-07T09:21:48Z" finished-at="2018-03-07T09:21:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- ruf.ruf1.ruf -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

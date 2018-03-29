@@ -33,7 +33,7 @@ public class homepage extends login
 			driver.findElement(By.name("contact_first_name")).sendKeys("Wexos");
 			driver.findElement(By.name("contact_surname")).sendKeys("Informitica");
 			driver.findElement(By.xpath("//input [@class='button']")).click();
-		  
+		  System.out.println("this is createcompany");
 	  }
 
 @Test(priority=3,enabled=true)
@@ -43,6 +43,7 @@ public void search() throws InterruptedException
 	//driver.switchTo().frame("mainpanel");
 	driver.findElement(By.name("search")).sendKeys("WexosInformitica"); 
 	driver.findElement(By.xpath("(//input [@type='image'])[1]")).click();
+	System.out.println("this is search");
 }
 
 @Test(priority=4,enabled=true)
@@ -57,6 +58,7 @@ public void CRMPRO_News() throws InterruptedException
 	String parentwindow=itt.next();
 	String childwindow=itt.next();
 	driver.switchTo().window(parentwindow);
+	System.out.println("this is news");
 }
 
 @Test(priority=5,enabled=true)
@@ -68,6 +70,7 @@ public void SideMenueBar() throws InterruptedException
 	Thread.sleep(5000);
 	driver.findElement(By.xpath("//a [text()='Add Boxes»']")).click();
 	driver.findElement(By.xpath("//a [text()='Close']")).click();
+	System.out.println("this is side menuebar");
 }
 
 @Test(priority=6,enabled=true)

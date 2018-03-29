@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ruf.ruf1.ruf">
+      <class name="crmpro.homepage">
         <methods>
-          <include name="test1"/>
           <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="logout"/>
+          <include name="launch"/>
         </methods>
-      </class> <!-- ruf.ruf1.ruf -->
+      </class> <!-- crmpro.homepage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

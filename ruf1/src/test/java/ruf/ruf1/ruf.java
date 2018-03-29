@@ -36,12 +36,13 @@ public void test1() throws IOException
 {
 	driver.findElement(By.id("day")).click();
 	screenShort("day");
-}
-@Test(priority=1,groups="group2")
-public void test2() throws IOException
-{
 	driver.findElement(By.id("month")).click();
 	screenShort("month");
+}
+@Test(priority=1,groups="group2",enabled=false)
+public void test2() throws IOException
+{
+	
 }
   
 
